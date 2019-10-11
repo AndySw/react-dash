@@ -1,13 +1,10 @@
 import JiraClient from 'jira-connector'
 import React from 'react'
-import UrlConf from './UrlConf'
 
 var Jira = new JiraClient({
-  host: 'https://jira.wds.co/rest/api/2/',
-  protocol: 'https',
+  host: 'jira.wds.co',
   basic_auth: {
-    username: 'ktwallboard',
-    password: '8ynEeH5tPR4'
+    base64: 'a3R3YWxsYm9hcmQ6OHluRWVINXRQUjQ='
   }
 })
 

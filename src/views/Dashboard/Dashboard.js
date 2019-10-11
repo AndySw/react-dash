@@ -39,7 +39,8 @@ import { getStyle } from '@coreui/coreui/dist/js/coreui-utilities'
 
 //const Widget03 = lazy(() => import('../../views/Widgets/Widget03'));
 
-
+import state from './Posts'
+import PostsData from './PostsData'
 
 const brandPrimary = getStyle('--primary')
 //const brandSuccess = getStyle('--success')
@@ -55,13 +56,13 @@ const brandInfo = getStyle('--info')
 
 // Card Chart 1
 const cardChartData1 = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+  labels: ['title', 'id', 'userId'],
   datasets: [
     {
       label: 'My First dataset',
       backgroundColor: brandPrimary,
       borderColor: 'rgba(255,255,255,.55)',
-      data: [5, 59, 84, 84, 51, 55, 40, 59, 84, 84, 51, 55],
+      data: [({ PostsData })],
     },
   ],
 };
@@ -266,7 +267,7 @@ const doughnut1 = {
   ],
   datasets: [
     {
-      data: [300, 50, 100],
+      data: [5,35,89],
       backgroundColor: [
         '#FF6384',
         '#36A2EB',
